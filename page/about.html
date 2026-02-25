@@ -32,6 +32,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet" />
 
+    <link rel="stylesheet" href="css/style.css">
+
     <script src="../js/app.js"></script>
 
 </head>
@@ -49,287 +51,227 @@
 
 
 
-        <!-- ABOUT -->
-
-        <section class="py-32 md:py-40">
-
-            <div class="max-w-6xl mx-auto px-6">
-
-
-
-                <!-- HERO -->
-
-                <div class="text-center mb-32">
-
-                    <h1 class="text-4xl md:text-6xl font-black mb-10 leading-[1.2]">
-
-                        보기 좋은 사이트를 넘어,<br>
-
-                        <span class="text-primary">문의가 오는</span> 홈페이지를 만듭니다.
-
-                    </h1>
-
-
-
-                    <div class="max-w-3xl mx-auto space-y-6 text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
-
-                        <p>
-
-                            NXT web studio는 병원, 학원, 매장 등 소상공인과 중소기업을 위한 홈페이지 제작 전문 스튜디오입니다.
-
-                        </p>
-
-
-
-                        <p>
-
-                            단순히 예쁜 디자인이 아닌, 고객의 신뢰를 만들고 실제 문의와 예약으로 이어지는 구조를 설계합니다.
-
-                        </p>
-
-
-
-                        <p class="font-bold text-slate-800 dark:text-white">
-
-                            합리적인 비용과 빠른 제작으로, 비즈니스의 첫인상을 완성합니다.
-
-                        </p>
-
-                    </div>
-
+        <!-- HERO SECTION -->
+        <section class="relative pt-40 pb-32 overflow-hidden">
+            <!-- Background mesh gradient -->
+            <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full -z-10">
+                <div
+                    class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-primary/20 blur-[120px] rounded-full animate-pulse">
                 </div>
-
-
-
-                <!-- STATS -->
-
-                <div class="grid md:grid-cols-2 gap-8 text-center mb-32">
-
-
-
-
-                    <div>
-
-                        <div class="text-4xl font-black text-primary mb-2">
-
-                            100%
-
-                        </div>
-
-                        <div class="text-slate-500">
-
-                            맞춤 제작
-
-                        </div>
-
-                    </div>
-
-
-
-                    <div>
-
-                        <div class="text-4xl font-black text-primary mb-2">
-
-                            Fast
-
-                        </div>
-
-                        <div class="text-slate-500">
-
-                            빠른 제작 속도
-
-                        </div>
-
-                    </div>
-
+                <div
+                    class="absolute bottom-[20%] right-[-10%] w-[35%] h-[35%] bg-secondary/10 blur-[100px] rounded-full">
                 </div>
-
-
-
-                <!-- GOALS -->
-
-                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-32">
-
-
-
-                    <div
-                        class="bg-white dark:bg-accent-dark p-8 rounded-2xl border border-slate-200 dark:border-slate-800 hover:-translate-y-2 hover:shadow-xl transition-all">
-
-                        <div class="text-3xl mb-4">🏆</div>
-
-                        <h3 class="font-bold mb-2">신뢰 상승</h3>
-
-                        <p class="text-sm text-slate-500">
-
-                            전문적인 디자인
-
-                        </p>
-
-                    </div>
-
-
-
-                    <div
-                        class="bg-white dark:bg-accent-dark p-8 rounded-2xl border border-slate-200 dark:border-slate-800 hover:-translate-y-2 hover:shadow-xl transition-all">
-
-                        <div class="text-3xl mb-4">📈</div>
-
-                        <h3 class="font-bold mb-2">문의 증가</h3>
-
-                        <p class="text-sm text-slate-500">
-
-                            전환 중심 구조
-
-                        </p>
-
-                    </div>
-
-
-
-                    <div
-                        class="bg-white dark:bg-accent-dark p-8 rounded-2xl border border-slate-200 dark:border-slate-800 hover:-translate-y-2 hover:shadow-xl transition-all">
-
-                        <div class="text-3xl mb-4">📱</div>
-
-                        <h3 class="font-bold mb-2">모바일 최적화</h3>
-
-                        <p class="text-sm text-slate-500">
-
-                            모든 디바이스 지원
-
-                        </p>
-
-                    </div>
-
-
-
-                    <div
-                        class="bg-white dark:bg-accent-dark p-8 rounded-2xl border border-slate-200 dark:border-slate-800 hover:-translate-y-2 hover:shadow-xl transition-all">
-
-                        <div class="text-3xl mb-4">✨</div>
-
-                        <h3 class="font-bold mb-2">명확한 전달</h3>
-
-                        <p class="text-sm text-slate-500">
-
-                            직관적인 UX
-
-                        </p>
-
-                    </div>
-
-
-
-                </div>
-
-
-
-                <!-- DIFFERENCE -->
-
-                <div class="grid lg:grid-cols-2 gap-16 items-center mb-32">
-
-
-
-                    <div class="bg-white dark:bg-accent-dark p-10 rounded-3xl shadow-lg space-y-6">
-
-                        <h2 class="text-3xl font-black mb-4">
-
-                            왜 NXT인가
-
-                        </h2>
-
-
-
-                        <div class="space-y-4 text-slate-600 dark:text-slate-400">
-
-                            <p>✔ 소상공인 맞춤 가격</p>
-
-                            <p>✔ 빠른 제작</p>
-
-                            <p>✔ 안정적인 유지보수</p>
-
-                            <p>✔ 실제 문의 증가 구조</p>
-
-                        </div>
-
-                    </div>
-
-
-
-                    <div class="bg-primary text-white p-12 rounded-3xl shadow-2xl">
-
-                        <h3 class="text-2xl font-black mb-6">
-
-                            Our Philosophy
-
-                        </h3>
-
-
-
-                        <p class="text-white/80 leading-relaxed mb-4">
-
-                            복잡함은 빼고 핵심만 전달합니다.
-
-                        </p>
-
-
-
-                        <p class="text-white/80 leading-relaxed">
-
-                            사용자가 이해하기 쉽고 행동하기 쉬운 홈페이지가 가장 강력합니다.
-
-                        </p>
-
-                    </div>
-
-
-
-                </div>
-
-
-
-                <!-- CTA -->
-
-                <div class="bg-primary text-white p-16 rounded-3xl text-center shadow-2xl shadow-primary/30">
-
-                    <h2 class="text-3xl md:text-4xl font-black mb-6">
-
-                        지금 바로 시작하세요
-
-                    </h2>
-
-
-
-                    <p class="text-white/80 mb-10">
-
-                        무료 상담 가능합니다.
-
-                    </p>
-
-
-
-                    <a href="contact.html"
-                        class="inline-block bg-white text-primary px-10 py-5 rounded-2xl font-bold hover:scale-105 hover:bg-slate-100 transition-all shadow-xl">
-
-                        문의하기
-
-                    </a>
-
-
-
-                </div>
-
-
-
             </div>
 
+            <div class="max-w-7xl mx-auto px-6 relative">
+                <div class="text-center mb-24">
+                    <div
+                        class="inline-block px-4 py-2 bg-primary/10 rounded-full text-xs font-black text-primary uppercase tracking-[0.2em] mb-8 reveal reveal-up">
+                        With NXT Studio
+                    </div>
+                    <h1 class="text-6xl md:text-8xl font-black mb-12 leading-tight tracking-tight reveal reveal-up">
+                        <span class="text-gradient-white">보기 좋은 사이트를 넘어,</span><br>
+                        <span class="text-primary italic">가치</span> <span class="text-gradient-white">있는 홈페이지를
+                            만듭니다.</span>
+                    </h1>
+                    <p class="text-lg md:text-xl text-slate-400 max-w-3xl mx-auto leading-relaxed reveal reveal-up"
+                        style="transition-delay: 0.1s;">
+                        NXT web studio는 단순한 제작을 넘어 비즈니스의 첫인상을 완성하고, <br class="hidden md:block">
+                        실제 고객 전환으로 이어지는 프리미엄 웹 솔루션을 제공합니다.
+                    </p>
+                </div>
+            </div>
         </section>
 
 
 
-        <!-- FOOTER -->
-        <footer id="footer-placeholder"
-            class="border-t border-slate-200 dark:border-accent-dark py-12 text-center mt-auto"></footer>
+        <!-- STATS & VALUES -->
+        <section class="py-24 relative overflow-hidden">
+            <div class="max-w-7xl mx-auto px-6">
+                <!-- Premium Stats -->
+                <div class="grid md:grid-cols-2 gap-12 mb-32">
+                    <div
+                        class="bg-white/[0.02] border border-white/5 backdrop-blur-xl p-16 rounded-[3rem] text-center reveal reveal-up group hover:border-primary/20 transition-all duration-500">
+                        <div
+                            class="text-6xl md:text-8xl font-black text-white mb-6 tracking-tighter group-hover:text-primary transition-colors">
+                            100%</div>
+                        <div class="text-sm font-bold text-slate-500 uppercase tracking-[0.3em]">Personalized Design
+                        </div>
+                        <p class="mt-6 text-slate-400 max-w-xs mx-auto">기획부터 디자인까지 클라이언트의 비즈니스 모델에 100% 맞춤화된 결과를 보장합니다.
+                        </p>
+                    </div>
+                    <div class="bg-white/[0.02] border border-white/5 backdrop-blur-xl p-16 rounded-[3rem] text-center reveal reveal-up group hover:border-primary/20 transition-all duration-500"
+                        style="transition-delay: 0.1s;">
+                        <div
+                            class="text-6xl md:text-8xl font-black text-white mb-6 tracking-tighter group-hover:text-primary transition-colors">
+                            Fast</div>
+                        <div class="text-sm font-bold text-slate-500 uppercase tracking-[0.3em]">Agile Delivery</div>
+                        <p class="mt-6 text-slate-400 max-w-xs mx-auto">표준화된 고효율 워크플로우를 통해 퀄리티를 유지하면서도 압도적인 속도로 프로젝트를
+                            완료합니다.</p>
+                    </div>
+                </div>
+
+                <!-- 4 Core Goals -->
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-32">
+                    <div
+                        class="group bg-slate-900/50 border border-white/5 p-10 rounded-[2.5rem] reveal reveal-up hover:border-primary/30 transition-all duration-500">
+                        <div
+                            class="w-12 h-12 bg-white/[0.03] border border-white/10 rounded-xl flex items-center justify-center text-slate-400 mb-8 group-hover:text-primary group-hover:border-primary/40 group-hover:bg-primary/5 transition-all duration-300">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.040L3 14.535a12.003 12.003 0 0012.027 8.534A12.003 12.003 0 0021 14.535l-.382-8.607z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4 text-white">신뢰의 완성</h3>
+                        <p class="text-sm text-slate-500 leading-relaxed">사용자가 처음 마주하는 첫인상에서 압도적인 전문성을 느낄 수 있도록 디자인합니다.
+                        </p>
+                    </div>
+
+                    <div class="group bg-slate-900/50 border border-white/5 p-10 rounded-[2.5rem] reveal reveal-up hover:border-primary/30 transition-all duration-500"
+                        style="transition-delay: 0.1s;">
+                        <div
+                            class="w-12 h-12 bg-white/[0.03] border border-white/10 rounded-xl flex items-center justify-center text-slate-400 mb-8 group-hover:text-primary group-hover:border-primary/40 group-hover:bg-primary/5 transition-all duration-300">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4 text-white">비즈니스 전환</h3>
+                        <p class="text-sm text-slate-500 leading-relaxed">단순 방문을 넘어 실제 매출과 문의로 이어지는 철저한 데이터 기반 UI/UX를
+                            설계합니다.</p>
+                    </div>
+
+                    <div class="group bg-slate-900/50 border border-white/5 p-10 rounded-[2.5rem] reveal reveal-up hover:border-primary/30 transition-all duration-500"
+                        style="transition-delay: 0.2s;">
+                        <div
+                            class="w-12 h-12 bg-white/[0.03] border border-white/10 rounded-xl flex items-center justify-center text-slate-400 mb-8 group-hover:text-primary group-hover:border-primary/40 group-hover:bg-primary/5 transition-all duration-300">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4 text-white">모바일 최적화</h3>
+                        <p class="text-sm text-slate-500 leading-relaxed">언제 어디서나 완벽한 경험을 제공하는 모바일 퍼스트 반응형 레이아웃을 구현합니다.
+                        </p>
+                    </div>
+
+                    <div class="group bg-slate-900/50 border border-white/5 p-10 rounded-[2.5rem] reveal reveal-up hover:border-primary/30 transition-all duration-500"
+                        style="transition-delay: 0.3s;">
+                        <div
+                            class="w-12 h-12 bg-white/[0.03] border border-white/10 rounded-xl flex items-center justify-center text-slate-400 mb-8 group-hover:text-primary group-hover:border-primary/40 group-hover:bg-primary/5 transition-all duration-300">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-7.714 2.143L11 21l-2.286-6.857L1 12l7.714-2.143L11 3z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4 text-white">직관적 경험</h3>
+                        <p class="text-sm text-slate-500 leading-relaxed">설명이 필요 없는 명확한 구조로 사용자가 원하는 정보를 즉시 찾을 수 있게
+                            만듭니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- PHILOSOPHY SECTION -->
+        <section class="py-24 bg-slate-900/30">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="grid lg:grid-cols-2 gap-12 items-stretch">
+                    <div class="bg-white/[0.02] border border-white/5 p-16 rounded-[3rem] reveal reveal-up">
+                        <h2 class="text-3xl md:text-4xl font-black mb-12 text-white">왜 NXT인가</h2>
+                        <div class="space-y-8">
+                            <div class="flex items-start gap-6 group/item">
+                                <div
+                                    class="w-10 h-10 bg-white/[0.05] border border-white/10 rounded-xl flex items-center justify-center text-white/50 font-bold shrink-0 group-hover/item:text-primary group-hover/item:border-primary/40 transition-all duration-300">
+                                    01</div>
+                                <div>
+                                    <h4 class="font-bold text-white mb-2">진짜 비즈니스를 아는 설계</h4>
+                                    <p class="text-slate-400 text-sm leading-relaxed">단순히 코드만 짜지 않습니다. 업종의 특성을 파악하여 최적화된
+                                        마케팅 구조를 먼저 제안합니다.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-6 group/item">
+                                <div
+                                    class="w-10 h-10 bg-white/[0.05] border border-white/10 rounded-xl flex items-center justify-center text-white/50 font-bold shrink-0 group-hover/item:text-primary group-hover/item:border-primary/40 transition-all duration-300">
+                                    02</div>
+                                <div>
+                                    <h4 class="font-bold text-white mb-2">압도적인 시각적 임팩트</h4>
+                                    <p class="text-slate-400 text-sm leading-relaxed">브랜드의 가치를 한 단계 높여주는 프리미엄 디자인으로 사용자의
+                                        시선을 즉시 사로잡습니다.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-6 group/item">
+                                <div
+                                    class="w-10 h-10 bg-white/[0.05] border border-white/10 rounded-xl flex items-center justify-center text-white/50 font-bold shrink-0 group-hover/item:text-primary group-hover/item:border-primary/40 transition-all duration-300">
+                                    03</div>
+                                <div>
+                                    <h4 class="font-bold text-white mb-2">투명하고 안정적인 파트너십</h4>
+                                    <p class="text-slate-400 text-sm leading-relaxed">제작 과정의 모든 단계를 투명하게 공유하며, 런칭 후에도
+                                        안정적인 유지보수를 지원합니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-900/50 border border-white/5 p-16 rounded-[3rem] shadow-2xl relative overflow-hidden flex flex-col justify-center reveal reveal-up"
+                        style="transition-delay: 0.1s;">
+                        <div
+                            class="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl">
+                        </div>
+                        <h3 class="text-3xl font-black mb-10 text-white relative z-10">Our Philosophy</h3>
+                        <div class="space-y-8 relative z-10">
+                            <p class="text-2xl font-bold text-gradient-white leading-tight">
+                                "복잡함은 빼고 핵심만 전달합니다. 이해하기 쉬운 것이 가장 강력합니다."
+                            </p>
+                            <p class="text-slate-400 leading-relaxed text-lg">
+                                우리는 화려함 뒤에 숨겨진 실질적인 기능에 집중합니다. 사용자가 쉽게 정보를 찾고 고민 없이 행동할 수 있는 홈페이지, 그것이 NXT가 추구하는 기술의
+                                방향입니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- CTA -->
+
+        <!-- CTA SECTION -->
+        <section class="py-32 px-6 reveal reveal-up">
+            <div class="max-w-7xl mx-auto">
+                <div
+                    class="bg-primary/5 border border-primary/20 rounded-[3rem] p-20 text-center relative overflow-hidden">
+                    <div
+                        class="absolute top-0 right-0 w-80 h-80 bg-primary/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-[100px]">
+                    </div>
+                    <div class="relative z-10">
+                        <h2 class="text-5xl md:text-6xl font-black mb-8 text-white tracking-tight">
+                            지금 바로 시작하세요
+                        </h2>
+                        <p class="text-slate-400 mb-12 text-xl max-w-2xl mx-auto leading-relaxed">
+                            비즈니스의 다음 단계를 위한 가장 확실한 선택.<br>NXT의 전문가들이 당신의 성공을 설계합니다.
+                        </p>
+                        <a href="contact.html"
+                            class="inline-block bg-primary text-white px-12 py-5 rounded-2xl font-bold transition hover:scale-105 shadow-2xl shadow-primary/30 hover:bg-blue-700 duration-300">
+                            무료 상담 신청하기
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    </div>
+
+    </section>
+
+
+
+    <!-- FOOTER -->
+    <footer id="footer-placeholder" class="py-12 border-t border-white/5 mt-auto"></footer>
 
 
 
