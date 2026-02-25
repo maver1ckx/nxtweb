@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html class="dark scroll-smooth" lang="ko">
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>문의하기 - NXT web studio</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="홈페이지 제작이 필요하신가요? 1:1 맞춤 상담을 통해 비즈니스에 꼭 필요한 웹사이트 구축 컨설팅을 진행해 드립니다." />
+    <meta name="keywords" content="홈페이지 제작 문의, 웹사이트 상담, 에이전시 컨택, 외주 문의" />
+    <meta name="author" content="NXT web studio" />
+
+    <!-- Open Graph (Kakao, Facebook, LinkedIn) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://nxtwebstudio.com/contact.html" />
+    <meta property="og:title" content="홈페이지 제작 문의 - NXT web studio" />
+    <meta property="og:description" content="1:1 맞춤 상담을 통해 비즈니스에 꼭 필요한 웹사이트 구축 컨설팅을 받아보세요." />
+    <meta property="og:image" content="https://nxtwebstudio.com/assets/og-image.jpg" />
+    <meta property="og:site_name" content="NXT web studio" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="홈페이지 제작 문의 - NXT web studio" />
+    <meta name="twitter:description" content="1:1 맞춤 상담을 통해 비즈니스에 꼭 필요한 웹사이트 구축 컨설팅을 받아보세요." />
+    <meta name="twitter:image" content="https://nxtwebstudio.com/assets/og-image.jpg" />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+
+    <script src="../js/app.js"></script>
+
+</head>
+
+
+
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-white">
+
+    <div class="min-h-screen flex flex-col gradient-bg">
+
+
+        <!-- HEADER -->
+        <header id="header-placeholder"
+            class="sticky top-0 z-50 border-b border-slate-200 dark:border-accent-dark bg-background-light/80 dark:bg-background-dark/80 backdrop-blur">
+        </header>
+
+
+
+        <!-- MAIN -->
+
+        <main class="flex-1 flex items-center justify-center px-6 py-24">
+
+
+            <div class="max-w-6xl w-full grid lg:grid-cols-2 gap-16 items-center">
+
+
+
+                <!-- LEFT -->
+
+                <div>
+
+
+                    <div class="mb-8">
+
+                        <div class="text-sm text-primary font-bold mb-4">
+
+                            무료 상담 가능 · 평균 응답 12시간 이내
+
+                        </div>
+
+
+                        <h1 class="text-5xl font-black mb-6 leading-tight">
+
+                            홈페이지 제작,<br>
+
+                            지금 바로 시작하세요
+
+                        </h1>
+
+
+                        <p class="text-slate-500 text-lg">
+
+                            간단한 정보만 남겨주시면 빠르게 연락드립니다.
+
+                        </p>
+
+
+                    </div>
+
+
+
+                    <div class="space-y-4 text-sm text-slate-500">
+
+                        <div>✔ 무료 상담</div>
+
+                        <div>✔ 맞춤 견적 제공</div>
+
+                        <div>✔ 빠른 제작 가능</div>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- RIGHT FORM -->
+
+                <form id="contactForm" class="space-y-8 bg-white dark:bg-accent-dark p-8 md:p-12 rounded-3xl shadow-xl">
+
+
+                    <div>
+
+                        <label class="text-sm font-bold">이름 / 업체명</label>
+
+                        <input id="name" required
+                            class="w-full mt-2 rounded-xl px-4 py-3 bg-slate-100 dark:bg-slate-800 focus:ring-2 focus:ring-primary outline-none" />
+
+                    </div>
+
+
+
+                    <div>
+
+                        <label class="text-sm font-bold">이메일</label>
+
+                        <input id="email" type="email" required
+                            class="w-full mt-2 rounded-xl px-4 py-3 bg-slate-100 dark:bg-slate-800 focus:ring-2 focus:ring-primary outline-none" />
+
+                    </div>
+
+
+
+                    <div>
+
+                        <label class="text-sm font-bold">연락처</label>
+
+                        <input id="tel" required
+                            class="w-full mt-2 rounded-xl px-4 py-3 bg-slate-100 dark:bg-slate-800 focus:ring-2 focus:ring-primary outline-none" />
+
+                    </div>
+
+
+
+                    <div>
+
+                        <label class="text-sm font-bold">문의 내용</label>
+
+                        <textarea id="inquiryContent" required rows="4"
+                            class="w-full mt-2 rounded-xl px-4 py-3 bg-slate-100 dark:bg-slate-800 focus:ring-2 focus:ring-primary outline-none"></textarea>
+
+                    </div>
+
+
+
+                    <button type="submit"
+                        class="w-full bg-primary hover:bg-blue-700 text-white font-black py-4 rounded-xl transition hover:scale-[1.02] shadow-lg">
+
+                        무료 상담 신청하기
+
+                    </button>
+
+
+
+                    <div id="successMessage" class="hidden text-center text-green-500 font-bold" style="display: none;">
+
+                        문의가 접수되었습니다.
+
+                    </div>
+
+
+
+                </form>
+
+
+            </div>
+
+
+        </main>
+
+
+
+        <!-- FOOTER -->
+        <footer id="footer-placeholder"
+            class="border-t border-slate-200 dark:border-accent-dark py-12 text-center mt-auto"></footer>
+
+
+
+    </div>
+
+
+
+    <script>
+
+        const form = document.getElementById("contactForm");
+        const msg = document.getElementById("successMessage");
+        const inquiryArea = document.getElementById("inquiryContent");
+
+        // Handle Plan Parameter
+        window.addEventListener('DOMContentLoaded', () => {
+            const params = new URLSearchParams(window.location.search);
+            const plan = params.get('plan');
+            if (plan && inquiryArea) {
+                inquiryArea.value = `[선택 플랜: ${plan}]\n\n 선택한 플랜에 대해 상세히 상담받고 싶습니다. `;
+                inquiryArea.focus();
+            }
+        });
+
+        form.addEventListener("submit", async function (e) {
+            e.preventDefault();
+
+            // --- Make.com Webhook Settings ---
+            const WEBHOOK_URL = 'https://hook.eu1.make.com/mga5z2adj0oas2r4o8dm6o1na33shymp';
+            // ---------------------------
+
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                call: document.getElementById('tel').value,
+                message: inquiryArea.value
+            };
+
+            try {
+                // Submit button loading state
+                const submitBtn = form.querySelector('button');
+                const originalText = submitBtn ? submitBtn.textContent : '무료 상담 신청하기';
+
+                if (submitBtn) {
+                    submitBtn.disabled = true;
+                    submitBtn.textContent = '전송 중...';
+                }
+
+                const response = await fetch(WEBHOOK_URL, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(formData)
+                });
+
+                if (response.ok) {
+                    msg.classList.remove("hidden");
+                    msg.style.display = "block"; // Explicitly show
+                    form.reset();
+                    // Scroll to success message
+                    msg.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                } else {
+                    alert('전송에 실패했습니다. Make.com 시나리오가 활성화(ON) 되어 있는지 확인해 주세요.');
+                }
+
+                if (submitBtn) {
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = originalText;
+                }
+
+            } catch (error) {
+                console.error('Error:', error);
+                alert('연결 오류가 발생했습니다.');
+            }
+        });
+
+    </script>
+
+
+
+</body>
+
+</html>
