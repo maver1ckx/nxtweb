@@ -23,11 +23,9 @@ tailwind.config = {
 // Component Constants (HTML as strings to bypass local fetch CORS issues)
 const HEADER_HTML = `
 <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
-    <a href="index.html" class="flex items-center gap-2 text-2xl font-black tracking-tight group">
-        <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center group-hover:rotate-12 transition-transform">
-            <span class="text-white text-xs">N</span>
-        </div>
-        <span class="text-slate-900 dark:text-white"><span class="text-primary">NXT</span> studio</span>
+    <a href="index.html" class="flex items-center gap-1.5 group">
+        <span class="text-2xl font-black tracking-tighter text-primary transition-colors duration-300">NXT</span>
+        <span class="text-xl font-light tracking-widest text-slate-500 uppercase mt-0.5 group-hover:text-white transition-colors duration-300">Studio</span>
     </a>
 
     <nav class="hidden md:flex gap-10 text-sm font-semibold uppercase tracking-wider">
@@ -47,15 +45,14 @@ const HEADER_HTML = `
 const FOOTER_HTML = `
 <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12 text-left">
     <div class="md:col-span-2">
-        <a href="index.html" class="flex items-center gap-2 text-xl font-black tracking-tight mb-6">
-            <div class="w-6 h-6 bg-primary rounded flex items-center justify-center">
-                <span class="text-white text-[10px]">N</span>
-            </div>
-            <span class="text-white"><span class="text-primary">NXT</span> studio</span>
+        <a href="index.html" class="flex items-center gap-1.5 mb-6 group inline-flex">
+            <span class="text-2xl font-black tracking-tighter text-primary transition-colors duration-300">NXT</span>
+            <span class="text-xl font-light tracking-widest text-slate-500 uppercase mt-0.5 group-hover:text-white transition-colors duration-300">Studio</span>
         </a>
         <p class="text-slate-500 text-sm max-w-xs leading-relaxed">
             Leading the next digital standard with premium web experiences for small businesses and educators.
         </p>
+
     </div>
     
     <div>
