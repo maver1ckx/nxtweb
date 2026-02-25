@@ -29,8 +29,11 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/style.css">
 
     <script src="../js/app.js"></script>
 
@@ -50,166 +53,148 @@
 
 
 
-        <!-- HERO (원래 문구 적용) -->
-
-        <section class="min-h-[90vh] flex items-center justify-center text-center px-6">
-
-            <div class="max-w-5xl">
-
-
-                <h1 class="text-5xl md:text-7xl font-black mb-8 leading-tight">
-
-                    Crafting the <span class="text-primary">Next</span><br>
-
-                    Digital Experience
-
-                </h1>
-
-
-
-                <p class="text-slate-500 text-lg mb-12">
-
-                    병원, 학원, 매장을 위한 홈페이지 제작<br>
-
-                    고객을 늘리는 웹사이트를 만듭니다.
-
-                </p>
-
-
-
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
-
-
-                    <a href="contact.html"
-                        class="bg-primary hover:bg-blue-700 text-white px-10 py-5 rounded-xl font-bold transition hover:scale-105 shadow-lg">
-
-                        홈페이지 제작 문의
-
-                    </a>
-
-
-
-                    <a href="service.html"
-                        class="border border-slate-300 px-10 py-5 rounded-xl font-bold hover:bg-slate-100 dark:hover:bg-accent-dark transition">
-
-                        서비스 보기
-
-                    </a>
-
-
+        <!-- HERO CONTENT -->
+        <main class="relative overflow-hidden pt-20">
+            <!-- Background Elements -->
+            <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full -z-10 pointer-events-none">
+                <div
+                    class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-primary/20 rounded-full blur-[120px] animate-float">
                 </div>
-
-
+                <div
+                    class="absolute bottom-[-10%] right-[-10%] w-[30%] h-[30%] bg-secondary/10 rounded-full blur-[100px] animate-float-delayed">
+                </div>
             </div>
 
-        </section>
+            <!-- Hero Section -->
+            <section class="min-h-[85vh] flex items-center justify-center px-6 relative">
+                <div class="max-w-5xl mx-auto text-center reveal-up reveal">
 
-
-
-        <!-- TRUST -->
-
-        <section class="py-20 text-center">
-
-            <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10">
-
-                <div>
-
-                    <div class="text-4xl font-black text-primary mb-2">
-                        100%
+                    <h1 class="text-6xl md:text-8xl font-black mb-4 leading-[1.4] tracking-tight text-white">
+                        <span class="text-gradient-white">Crafting the</span> <span
+                            class="text-primary italic">Next</span><br>
+                        <span class="text-gradient-white">Digital Standard</span>
+                    </h1>
+                    <div class="text-xs md:text-sm font-bold tracking-[0.3em] uppercase text-primary/60 mb-8 italic">
+                        with NXT studio
                     </div>
 
-                    <div class="text-slate-500">
-                        맞춤 제작
-                    </div>
+                    <p class="text-slate-400 text-lg md:text-xl mb-12 max-w-2xl mx-auto font-medium">
+                        단순한 홈페이지를 넘어, 비즈니스의 성장을 견인하는<br class="hidden sm:block">
+                        최고 수준의 디지털 경험을 설계합니다.
+                    </p>
 
+                    <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+                        <a href="contact.html"
+                            class="group relative bg-primary text-white px-10 py-5 rounded-2xl font-bold transition-all shadow-2xl shadow-primary/40 hover:scale-105 active:scale-95 overflow-hidden">
+                            <span class="relative z-10">프로젝트 문의하기</span>
+                            <div
+                                class="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                            </div>
+                        </a>
+
+                        <a href="service.html"
+                            class="flex items-center gap-3 text-slate-300 font-bold hover:text-white transition-colors group">
+                            <span>서비스 포트폴리오</span>
+                            <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="Step Id: 14 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TRUST STATS -->
+            <section class="py-20 border-y border-white/5 bg-white/[0.02]">
+                <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-12 text-center reveal reveal-up">
+                    <div class="p-4">
+                        <div class="text-5xl font-black text-primary mb-2 tracking-tighter">Fast</div>
+                        <div class="text-slate-500 font-semibold uppercase tracking-widest text-xs">Delivery Time
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <div class="text-5xl font-black text-white mb-2 tracking-tighter">Quality</div>
+                        <div class="text-slate-500 font-semibold uppercase tracking-widest text-xs">Custom Standard
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <div class="text-5xl font-black text-white mb-2 tracking-tighter">24/7</div>
+                        <div class="text-slate-500 font-semibold uppercase tracking-widest text-xs">Dedicated Support
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+
+        <!-- SERVICES BENTO GRID -->
+        <section class="py-32 px-6">
+            <div class="max-w-7xl mx-auto">
+                <div class="mb-20 text-center reveal reveal-up">
+                    <h2 class="text-4xl md:text-5xl font-black mb-6">Our Services</h2>
+                    <p class="text-slate-500 max-w-xl mx-auto">비즈니스의 성격에 맞춘 최적화된 설루션을 제공합니다.</p>
                 </div>
 
-
-
-                <div>
-
-                    <div class="text-4xl font-black text-primary mb-2">
-                        Fast
+                <div class="grid md:grid-cols-12 gap-6 auto-rows-[240px]">
+                    <!-- Large Feature -->
+                    <div
+                        class="md:col-span-8 md:row-span-2 glass-card p-10 rounded-[2.5rem] flex flex-col justify-between reveal reveal-up">
+                        <div>
+                            <div class="w-14 h-14 bg-primary/20 rounded-2xl flex items-center justify-center mb-8">
+                                <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-3xl font-bold mb-4 text-white">맞춤형 홈페이지 제작</h3>
+                            <p class="text-slate-400 max-w-md">브랜드의 아이덴티티를 담은 유니크한 디자인과 최신 웹 기술의 결합으로 최상의 사용자 경험을 제공합니다.
+                            </p>
+                        </div>
+                        <div class="flex gap-3">
+                            <span class="px-4 py-2 bg-white/5 rounded-full text-xs font-bold text-slate-400">UI/UX
+                                Design</span>
+                            <span
+                                class="px-4 py-2 bg-white/5 rounded-full text-xs font-bold text-slate-400">Development</span>
+                        </div>
                     </div>
 
-                    <div class="text-slate-500">
-                        빠른 제작
+                    <!-- Small Feature 1 -->
+                    <div class="md:col-span-4 glass-card p-8 rounded-[2rem] reveal reveal-up"
+                        style="transition-delay: 0.1s;">
+                        <div class="w-10 h-10 bg-indigo-500/20 rounded-xl flex items-center justify-center mb-6">
+                            <svg class="w-6 h-6 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-white">모바일 최적화</h3>
+                        <p class="text-slate-400 text-sm">반응형 제작을 통해 모든 기기에서 완벽한 비주얼을 보장합니다.</p>
                     </div>
 
+                    <!-- Small Feature 2 -->
+                    <div class="md:col-span-4 glass-card p-8 rounded-[2rem] reveal reveal-up"
+                        style="transition-delay: 0.2s;">
+                        <div class="w-10 h-10 bg-emerald-500/20 rounded-xl flex items-center justify-center mb-6">
+                            <svg class="w-6 h-6 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-white">초고속 성능</h3>
+                        <p class="text-slate-400 text-sm">로딩 속도 최적화로 이탈률을 줄이고 고객 전환율을 높입니다.</p>
+                    </div>
+
+                    <!-- Wide Feature -->
+                    <div class="md:col-span-4 glass-card p-8 rounded-[2rem] bg-premium-blue/10 border-primary/20 flex flex-col justify-center items-center text-center reveal reveal-up"
+                        style="transition-delay: 0.3s;">
+                        <h3 class="text-xl font-bold mb-4 text-white">유지보수 & 관리</h3>
+                        <p class="text-slate-400 text-sm mb-6">전문 엔지니어의 지속적인 관리로<br>안정적인 운영을 지원합니다.</p>
+                        <a href="service.html" class="text-primary font-bold text-sm hover:underline">상세보기 →</a>
+                    </div>
                 </div>
-
             </div>
-
-        </section>
-
-
-
-        <!-- SERVICES -->
-
-        <section class="py-24">
-
-            <div class="max-w-6xl mx-auto px-6 text-center">
-
-                <h2 class="text-4xl font-black mb-16">
-                    서비스
-                </h2>
-
-
-
-                <div class="grid md:grid-cols-3 gap-10 text-left">
-
-                    <div class="p-8 rounded-xl hover:shadow-xl transition bg-white dark:bg-accent-dark">
-
-                        <h3 class="font-bold mb-3">
-                            홈페이지 제작
-                        </h3>
-
-                        <p class="text-slate-500">
-                            맞춤 제작
-                        </p>
-
-                    </div>
-
-
-
-                    <div class="p-8 rounded-xl hover:shadow-xl transition bg-white dark:bg-accent-dark">
-
-                        <h3 class="font-bold mb-3">
-                            모바일 최적화
-                        </h3>
-
-                        <p class="text-slate-500">
-                            모든 디바이스 지원
-                        </p>
-
-                    </div>
-
-
-
-                    <div class="p-8 rounded-xl hover:shadow-xl transition bg-white dark:bg-accent-dark">
-
-                        <h3 class="font-bold mb-3">
-                            유지보수
-                        </h3>
-
-                        <p class="text-slate-500">
-                            지속적인 관리
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-
-                <a href="service.html" class="inline-block mt-12 text-primary font-bold hover:underline">
-
-                    서비스 자세히 보기 →
-
-                </a>
-
-            </div>
-
         </section>
 
 
