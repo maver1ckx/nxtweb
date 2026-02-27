@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://maver1ckx.github.io/sitemap.xml
