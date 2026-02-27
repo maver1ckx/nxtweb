@@ -213,11 +213,64 @@
 
 
 
-    <script>
+<script>
 
-        const form = document.getElementById("contactForm");
-        const msg = document.getElementById("successMessage");
-        const inquiryArea = document.getElementById("inquiryContent");
+const form = document.getElementById("contactForm");
+const msg = document.getElementById("successMessage");
+const inquiryArea = document.getElementById("inquiryContent");
+const telInput = document.getElementById("tel");
+
+telInput.addEventListener("input", function (e) {
+
+    let num = e.target.value.replace(/\D/g, "");
+    let formatted = "";
+
+    // 서울 (02)
+    if (num.startsWith("02")) {
+
+        if (num.length <= 2) {
+            formatted = num;
+        } else if (num.length <= 5) {
+            formatted = num.slice(0, 2) + "-" + num.slice(2);
+        } else if (num.length <= 9) {
+            formatted = num.slice(0, 2) + "-" + num.slice(2, 5) + "-" + num.slice(5);
+        } else {
+            formatted = num.slice(0, 2) + "-" + num.slice(2, 6) + "-" + num.slice(6, 10);
+        }
+
+    }
+
+    // 대표번호 (1588, 1644, 1800 등)
+    else if (/^(15|16|18)\d{2}/.test(num)) {
+
+        if (num.length <= 4) {
+            formatted = num;
+        } else if (num.length <= 8) {
+            formatted = num.slice(0, 4) + "-" + num.slice(4);
+        } else {
+            formatted = num.slice(0, 4) + "-" + num.slice(4, 8);
+        }
+
+    }
+
+    // 휴대폰, 지역번호, 070, 050 등
+    else {
+
+        if (num.length <= 3) {
+            formatted = num;
+        } else if (num.length <= 6) {
+            formatted = num.slice(0, 3) + "-" + num.slice(3);
+        } else if (num.length <= 10) {
+            formatted = num.slice(0, 3) + "-" + num.slice(3, 6) + "-" + num.slice(6);
+        } else {
+            formatted = num.slice(0, 3) + "-" + num.slice(3, 7) + "-" + num.slice(7, 11);
+        }
+
+    }
+
+    e.target.value = formatted;
+
+});
 
         // Handle Plan Parameter
         window.addEventListener('DOMContentLoaded', () => {
