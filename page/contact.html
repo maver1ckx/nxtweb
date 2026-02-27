@@ -233,13 +233,13 @@
             e.preventDefault();
 
             // --- Make.com Webhook Settings ---
-            const WEBHOOK_URL = 'https://hook.eu1.make.com/mga5z2adj0oas2r4o8dm6o1na33shymp';
+            const WEBHOOK_URL = 'https://send.nsdg04.workers.dev/';
             // ---------------------------
 
             const formData = {
                 name: document.getElementById('name').value,
                 email: document.getElementById('email').value,
-                call: document.getElementById('tel').value,
+                phone: document.getElementById('tel').value,
                 message: inquiryArea.value
             };
 
