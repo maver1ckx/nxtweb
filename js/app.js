@@ -35,10 +35,32 @@ const HEADER_HTML = `
         <a href="about.html" class="nav-link text-slate-500 hover:text-primary transition-colors" data-nav="about">About Us</a>
     </nav>
 
-    <a href="contact.html"
-        class="bg-primary hover:bg-premium-blue/90 transition-all text-white px-8 py-3 rounded-full text-sm font-bold shadow-xl shadow-primary/20 hover:scale-105 active:scale-95 leading-none">
-        무료 상담하기
-    </a>
+    <div class="flex items-center gap-3">
+        <a href="contact.html"
+            class="hidden sm:inline-flex bg-primary hover:bg-premium-blue/90 transition-all text-white px-8 py-3 rounded-full text-sm font-bold shadow-xl shadow-primary/20 hover:scale-105 active:scale-95 leading-none">
+            무료 상담하기
+        </a>
+        <button id="mobileMenuButton" type="button"
+            class="md:hidden inline-flex items-center justify-center w-11 h-11 rounded-xl border border-white/10 bg-white/[0.03] text-slate-300 hover:text-white hover:border-white/20 transition-colors"
+            aria-label="모바일 메뉴 열기" aria-expanded="false">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+    </div>
+</div>
+<div id="mobileMenu"
+    class="md:hidden hidden border-t border-white/5 bg-background-dark/95 backdrop-blur">
+    <div class="max-w-7xl mx-auto px-6 py-6 flex flex-col gap-4 text-sm font-semibold uppercase tracking-wider">
+        <a href="index.html" class="nav-link text-slate-300 hover:text-primary transition-colors" data-nav="home">홈</a>
+        <a href="service.html" class="nav-link text-slate-300 hover:text-primary transition-colors" data-nav="service">서비스</a>
+        <a href="process.html" class="nav-link text-slate-300 hover:text-primary transition-colors" data-nav="process">프로세스</a>
+        <a href="about.html" class="nav-link text-slate-300 hover:text-primary transition-colors" data-nav="about">About Us</a>
+        <a href="contact.html"
+            class="mt-2 inline-flex items-center justify-center bg-primary hover:bg-premium-blue/90 transition-all text-white px-6 py-3 rounded-full text-sm font-bold shadow-xl shadow-primary/20 active:scale-95">
+            무료 상담하기
+        </a>
+    </div>
 </div>
 `;
 
@@ -87,11 +109,34 @@ function loadComponents() {
     if (headerElement) {
         headerElement.innerHTML = HEADER_HTML;
         setActiveNavLink();
+        initMobileMenu();
     }
 
     if (footerElement) {
         footerElement.innerHTML = FOOTER_HTML;
     }
+}
+
+function initMobileMenu() {
+    const button = document.getElementById('mobileMenuButton');
+    const menu = document.getElementById('mobileMenu');
+
+    if (!button || !menu) return;
+
+    const closeMenu = () => {
+        menu.classList.add('hidden');
+        button.setAttribute('aria-expanded', 'false');
+    };
+
+    button.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+        const expanded = menu.classList.contains('hidden') ? 'false' : 'true';
+        button.setAttribute('aria-expanded', expanded);
+    });
+
+    menu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', closeMenu);
+    });
 }
 
 function setActiveNavLink() {
