@@ -22,44 +22,40 @@ tailwind.config = {
 
 // Component Constants (HTML as strings to bypass local fetch CORS issues)
 const HEADER_HTML = `
-<div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
-    <a href="index.html" class="flex items-center gap-1.5 group">
-        <span class="text-2xl font-black tracking-tighter text-primary transition-colors duration-300">NXT</span>
-        <span class="text-xl font-light tracking-widest text-slate-500 uppercase mt-0.5 group-hover:text-white transition-colors duration-300">Studio</span>
+<div class="max-w-7xl mx-auto px-4 py-4 sm:py-5 flex justify-between items-center relative">
+    <a href="index.html" class="flex items-center gap-1 group shrink-0">
+        <span class="text-xl sm:text-2xl font-black tracking-tighter text-primary transition-colors duration-300">NXT</span>
+        <span class="text-lg sm:text-xl font-light tracking-widest text-slate-500 uppercase mt-0.5 group-hover:text-white transition-colors duration-300">Studio</span>
     </a>
 
-    <nav class="hidden md:flex gap-10 text-sm font-semibold uppercase tracking-wider">
-        <a href="index.html" class="nav-link text-slate-500 hover:text-primary transition-colors" data-nav="home">홈</a>
-        <a href="service.html" class="nav-link text-slate-500 hover:text-primary transition-colors" data-nav="service">서비스</a>
-        <a href="process.html" class="nav-link text-slate-500 hover:text-primary transition-colors" data-nav="process">프로세스</a>
-        <a href="about.html" class="nav-link text-slate-500 hover:text-primary transition-colors" data-nav="about">About Us</a>
+    <nav class="hidden sm:flex gap-3 md:gap-10 text-[10px] md:text-sm font-semibold uppercase tracking-wider absolute left-1/2 -translate-x-1/2">
+        <a href="index.html" class="nav-link text-slate-500 hover:text-primary transition-colors whitespace-nowrap" data-nav="home">홈</a>
+        <a href="service.html" class="nav-link text-slate-500 hover:text-primary transition-colors whitespace-nowrap" data-nav="service">서비스</a>
+        <a href="process.html" class="nav-link text-slate-500 hover:text-primary transition-colors whitespace-nowrap" data-nav="process">프로세스</a>
+        <a href="about.html" class="nav-link text-slate-500 hover:text-primary transition-colors whitespace-nowrap" data-nav="about">About</a>
     </nav>
 
-    <div class="flex items-center gap-3">
+    <div class="flex items-center gap-2">
         <a href="contact.html"
-            class="hidden sm:inline-flex bg-primary hover:bg-premium-blue/90 transition-all text-white px-8 py-3 rounded-full text-sm font-bold shadow-xl shadow-primary/20 hover:scale-105 active:scale-95 leading-none">
-            무료 상담하기
+            class="flex bg-primary hover:bg-premium-blue/90 transition-all text-white px-3 sm:px-6 py-2 sm:py-2.5 rounded-full text-[10px] sm:text-xs font-bold shadow-lg shadow-primary/20 hover:scale-105 active:scale-95 leading-none whitespace-nowrap">
+            문의하기
         </a>
         <button id="mobileMenuButton" type="button"
-            class="md:hidden inline-flex items-center justify-center w-11 h-11 rounded-xl border border-white/10 bg-white/[0.03] text-slate-300 hover:text-white hover:border-white/20 transition-colors"
+            class="sm:hidden inline-flex items-center justify-center w-8 h-8 rounded-lg border border-white/10 bg-white/[0.03] text-slate-300 hover:text-white hover:border-white/20 transition-colors"
             aria-label="모바일 메뉴 열기" aria-expanded="false">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
             </svg>
         </button>
     </div>
 </div>
 <div id="mobileMenu"
-    class="md:hidden hidden border-t border-white/5 bg-background-dark/95 backdrop-blur">
+    class="sm:hidden hidden border-t border-white/5 bg-background-dark/95 backdrop-blur">
     <div class="max-w-7xl mx-auto px-6 py-6 flex flex-col gap-4 text-sm font-semibold uppercase tracking-wider">
         <a href="index.html" class="nav-link text-slate-300 hover:text-primary transition-colors" data-nav="home">홈</a>
         <a href="service.html" class="nav-link text-slate-300 hover:text-primary transition-colors" data-nav="service">서비스</a>
         <a href="process.html" class="nav-link text-slate-300 hover:text-primary transition-colors" data-nav="process">프로세스</a>
         <a href="about.html" class="nav-link text-slate-300 hover:text-primary transition-colors" data-nav="about">About Us</a>
-        <a href="contact.html"
-            class="mt-2 inline-flex items-center justify-center bg-primary hover:bg-premium-blue/90 transition-all text-white px-6 py-3 rounded-full text-sm font-bold shadow-xl shadow-primary/20 active:scale-95">
-            무료 상담하기
-        </a>
     </div>
 </div>
 `;
